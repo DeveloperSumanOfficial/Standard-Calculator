@@ -64,25 +64,26 @@ Partial Class Form1
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.CheckUpdateManuallyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Palatino Linotype", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(15, 60)
+        Me.TextBox1.Location = New System.Drawing.Point(15, 59)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(562, 125)
+        Me.TextBox1.Size = New System.Drawing.Size(562, 126)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
         Me.Button1.AccessibleRole = System.Windows.Forms.AccessibleRole.Application
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button1.Location = New System.Drawing.Point(15, 192)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(140, 79)
@@ -249,7 +250,7 @@ Partial Class Form1
         'Button17
         '
         Me.Button17.AccessibleRole = System.Windows.Forms.AccessibleRole.Application
-        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button17.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button17.Font = New System.Drawing.Font("Microsoft YaHei", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(311, 518)
         Me.Button17.Name = "Button17"
@@ -286,17 +287,17 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Oswald", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 594)
+        Me.Label1.Location = New System.Drawing.Point(-8, 591)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(507, 56)
+        Me.Label1.Size = New System.Drawing.Size(559, 56)
         Me.Label1.TabIndex = 20
-        Me.Label1.Text = "Basic Calculator ( Made By Suman )"
+        Me.Label1.Text = "Standard Calculator ( Made By Suman )"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(131, 644)
+        Me.Label3.Location = New System.Drawing.Point(115, 642)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(302, 24)
         Me.Label3.TabIndex = 22
@@ -313,7 +314,7 @@ Partial Class Form1
         '
         'Button21
         '
-        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button21.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.Location = New System.Drawing.Point(311, 192)
         Me.Button21.Name = "Button21"
@@ -325,10 +326,10 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoryToolStripMenuItem, Me.ViewToolStripMenuItem, Me.HistoryClearToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HistoryToolStripMenuItem, Me.ViewToolStripMenuItem, Me.HistoryClearToolStripMenuItem, Me.AboutToolStripMenuItem, Me.CheckUpdateManuallyToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(588, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(589, 28)
         Me.MenuStrip1.TabIndex = 27
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -404,7 +405,7 @@ Partial Class Form1
         '
         Me.Button2.AccessibleRole = System.Windows.Forms.AccessibleRole.Application
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(173, 614)
+        Me.Button2.Location = New System.Drawing.Point(159, 614)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 80)
         Me.Button2.TabIndex = 2
@@ -420,7 +421,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(21, 671)
+        Me.Label2.Location = New System.Drawing.Point(12, 668)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(510, 19)
         Me.Label2.TabIndex = 28
@@ -450,12 +451,18 @@ Partial Class Form1
         Me.Button3.Text = "00"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'CheckUpdateManuallyToolStripMenuItem
+        '
+        Me.CheckUpdateManuallyToolStripMenuItem.Name = "CheckUpdateManuallyToolStripMenuItem"
+        Me.CheckUpdateManuallyToolStripMenuItem.Size = New System.Drawing.Size(179, 24)
+        Me.CheckUpdateManuallyToolStripMenuItem.Text = "Check &Update Manually"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGray
-        Me.ClientSize = New System.Drawing.Size(588, 692)
+        Me.ClientSize = New System.Drawing.Size(589, 601)
         Me.Controls.Add(Me.Button22)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button21)
@@ -483,6 +490,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Cursor = System.Windows.Forms.Cursors.AppStarting
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Location = New System.Drawing.Point(609, 650)
         Me.MaximumSize = New System.Drawing.Size(619, 739)
@@ -535,4 +543,5 @@ Partial Class Form1
     Friend WithEvents HistoryClearToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents CheckUpdateManuallyToolStripMenuItem As ToolStripMenuItem
 End Class
